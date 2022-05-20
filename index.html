@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hover.css">
+    <link rel="stylesheet" href="./css/static.css">
+    <title>Document</title>
+</head>
+
+<body onload="start()">
+    <div class="main">
+        <div class="start">
+            <div class="selector__title">Выбери тренировку</div>
+            <div class="train-selector">
+
+            </div>
+            <div class="circle-selector">
+                <p style="font-size: 18px">Круги</p>
+                <input class="circles" type="text" value="3">
+            </div>
+        </div>
+
+        <div class="train hidden">
+            <div class="train__title"></div>
+            <div class="train__exes">
+
+            </div>
+        </div>
+
+        <div class="current-exe hidden">
+            <div class="timer"><span>00</span>:<span>00</span></div>
+            <div class="current-exe__title">Пивет</div>
+            <input type="text" class="current-input current-weight">
+            <input type="text" class="current-input current-rep">
+            <div class="current__finish">Закончить</div>
+        </div>
+    </div>
+
+    <script src="./js/trains.js"></script>
+    <script src="./js/start.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

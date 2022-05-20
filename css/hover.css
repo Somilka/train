@@ -1,0 +1,10 @@
+.selector__element:hover,
+.exe__rep-value.stock:hover {
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+.current__finish:hover {
+    cursor: pointer;
+    background-color: #577956;
+}

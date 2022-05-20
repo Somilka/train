@@ -1,0 +1,260 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #e0e0e0;
+}
+
+.start {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.train-selector {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+
+.selector__title {
+    position: absolute;
+    top: 20%;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.selector__element {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 8px -2px black;
+    border-radius: 12px;
+    user-select: none;
+    /* color: white; */
+}
+
+.circle-selector {
+    position: absolute;
+    top: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.circle-selector input {
+    background-color: #fff;
+    font-size: 20px;
+    border: 6px solid black;
+    border-radius: 6px;
+    padding: 10px;
+    text-align: center;
+    width: 100px;
+}
+
+.train {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: #e0e0e0;
+}
+
+.train__title {
+    font-size: 30px;
+}
+
+.train__exes {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 75%;
+}
+
+.exe {
+    padding: 14px;
+    background-color: gray;
+    color: white;
+    border-radius: 12px;
+    /* flex: 1; */
+    width: 40%;
+    /* width: 70%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 14px;
+}
+
+.exe__title-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.exe__title {
+    text-align: center;
+}
+
+.exe__group,
+.exe__tip {
+    font-size: 12px;
+    color: lightgray;
+    text-align: center;
+}
+
+.exe__tip {
+    font-size: 14px;
+    color: white;
+}
+
+.exe__reps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.exe__rep {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.exe__rep-value {
+    position: relative;
+    width: 40%;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.exe__rep-value.stock {
+    font-size: 12px;
+}
+
+.exe__rep-weight {
+    width: 40%;
+    height: 100%;
+    font-size: 12px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 6px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.exe__rep-start {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: lightgray;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: black;
+}
+
+.exe__rep.stock .exe__rep-start:hover {
+    cursor: pointer;
+}
+
+.current-exe {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.current-input {
+    padding: 20px;
+    background-color: gray;
+    color: white;
+    border-radius: 12px;
+    font-size: 30px;
+    text-align: center;
+    /* width: auto; */
+    width: 300px;
+    cursor: default;
+}
+
+.current-exe__title {
+    position: absolute;
+    top: 20%;
+    font-size: 50px;
+}
+
+.timer {
+    position: absolute;
+    font-size: 40px;
+    color: black;
+}
+
+.current__finish {
+    position: absolute;
+    top: 75%;
+    font-size: 30px;
+    padding: 20px;
+    background-color: #7cac7a;
+    border-radius: 12px;
+    user-select: none;
+}
